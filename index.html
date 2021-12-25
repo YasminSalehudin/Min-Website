@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel= "stylesheet" type= "text/css" href= "style.css"/>
+<head>
+<meta charset="utf-8">
+<head>
+<title>YasminSalehudin</title>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #B20E66;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+ <h1 style="color: white; font-size:200% ; font-family: Arial, Helvetica, sans-serif;">
+	<i><marquee width="100%">Welcome to Yasmin's Diary! May You Have A Great Experience Here!(✿ ♥‿♥) <br> </i></marquee></h1>
+</div>
+
+<center>
+<br>
+<br>
+<a href="index.html"><font face="Times New Roman" font color="black">Home</a>|</font>
+<a href="aboutme.html"><font face="Times New Roman" "font color="black">About Me</a>|</font>
+<a href="myfamily.html"><font face="Times New Roman" "font color="black">My Family</a>|</font>
+<a href="education.html"><font face="Times New Roman" "font color="black">Education Background</a>|</font>
+<a href="gallery.html"><font face="Times New Roman" "font color="black">Gallery</a></font>
+<a href="favouritesong.html"><font face="Times New Roman" "font color="black">Favourite Song</a></font>
+<a href= "experience.html"><font face= "Times New Roman" font color= "black">Experience</a></font>
+
+</center>
+<br>
+<center><figure>
+    <figcaption>Listen to Music If You Want To!:</figcaption>
+    <audio src="audiocoding/onedirection.mp3" controls></audio>
+</figure>
+</center>
+<br>
+<center><p>Preview of Yasmin's Memories:</p></center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: center;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<center><div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="codingpicture/min.jpg" style="width:40%">
+  <div class="text">Outfit of The Day</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="codingpicture/meen2.jpg" style="width:30%">
+  <div class="text">Selfie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="codingpicture/yasminisa1.jpg" style="width:30%">
+  <div class="text">My Bestie❤</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div></center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<center>
+<h1><font face="verdana" "font color="#C922CB" font size="4">Prepared <sup>by:</sup></h1></font>
+<h2><font face="verdana" "font color="#F046A7" font size="4">Yasmin Binti Salehudin</font>
+<h3><font face="verdana" "font color="#A71A3C " font size="4">2019245992</h3></font>
+<h1><font face="verdana" "font color="#C922CB" font size="4">Prepared <sup>for:</sup></h1></font>
+<h2><font face="verdana" "font color="#F046A7" font size="4">Sir Mohd Firdaus Bin Mohd Helmi</h2></font>
+<p>Follow me on My social media:</p>
+</p>
+</center>
+<center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    align: center;
+}
+
+.fa-facebook {
+  background: white;
+  color: #36454F;
+}
+
+.fa-twitter {
+  background: white;
+  color: #36454F;
+}
+.fa-instagram {
+  background: white;
+  color: #36454F;
+}
+
+</style>
+</head>
+<body>
+<br>
+<a href="https://www.facebook.com/yasmin.salehudin.5"/class="fa fa-facebook"></a>
+<a href="https://twitter.com/meenieemin" class="fa fa-twitter"></a>
+</center>
+
+<center><iframe src="https://free.timeanddate.com/clock/i848sdj7/n122/tlmy/fn2/fcf0f/tcccc/bo2/th1/ts1/ta1" frameborder="0" width="85" height="23"></iframe></center>
+<br>
+
+</body>
+</html>
